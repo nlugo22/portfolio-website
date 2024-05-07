@@ -1,11 +1,10 @@
-body {
-}
-
+/* Toggle class for dark mode */
 .dark-mode {
   background-color: black;
   color: white;
 }
 
+/* Navbar styles */
 .navbar {
   border: white solid 2px;
   margin-bottom: 5px;
@@ -18,24 +17,35 @@ body {
 .navbar a {
   padding: 10px;
   margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
 }
 
+/* Dropdown menu style */
 .dropdown {
-  display: flex;
   position: relative;
 }
 
 .dropdown-menu {
   display: none;
-  background-color: white;
-  width: 150px;
-  z-index: 10;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 2px;
+}
+
+/* Name box on start screen */
 .name-box {
   text-align: center;
   border: gold solid 2px;
@@ -51,6 +61,7 @@ body {
   margin-bottom: 50px;
 }
 
+/* Terminal emulator styles */
 .terminal {
   border: solid white 2px;
   padding: 2px;
