@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="dark-mode" id="temp">
+    <div class="navbar">
+        <a href="home.html">HOME</a>
+      <div class="dropdown">
+        <a href="#n">Portfolio</a>
+      </div>
+      <a href="#contact">Contact</a>
+
+      <!-- Dark-Mode Switch -->
+      <div class="theme-switch-container">
+        <label class="dark-mode-switch">Dark Mode</label>
+          <input type="checkbox" id="dark-mode-checkbox" checked>
+          <div class="round-slider"></div>
+      </div>  
+  </div>
+
+  <div class="dropdown-menu">
+    <ul>
+      <li>Project 1</li>
+      <li>Project 2</li>
+      <li>Project 3</li>
+   </ul>
+ </div>
+    <!-- Main content like the terminal and name input -->
+    <main>
+      <div class="name-box" id="nameBox">
+        <div class="typingContainer">
+        <h1 class="welcome"></h1>
+        </div>
+        <br>
+        <label for="name"></label>
+        <input type="text" class="nameBoxInput" id="nameInput" style="text-align:center;"  autofocus>
+      </div>
+      <div class="terminal hidden dark-mode" id="terminalBox">
+        <p id="display"></p>
+        <label for="command-line" id="nameLabel">user$ </label>
+        <input type="text" id="command-line" class="commandInput">  
+      </div>
+     
+      <!-- Hints box  -->
+      <div class="hints hidden">
+        <button class="close-button" id="close-btn">&times;</button>
+        <h1>Hints</h1>
+        <ul>
+          <li>clear -- clears the terminal</li>
+          <li>ls -- lists files and directories</li>
+          <li>open -- opens a directory</li>
+          <li>exit -- close the console</li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+
+</html>

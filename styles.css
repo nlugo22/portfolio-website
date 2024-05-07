@@ -1,0 +1,120 @@
+body {
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  border: white solid 2px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.navbar a {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  background-color: white;
+  width: 150px;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.name-box {
+  text-align: center;
+  border: gold solid 2px;
+  font-size: 20px;
+  margin: 20px;
+  margin-top: 5px;
+}
+
+.name-box input{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.terminal {
+  border: solid white 2px;
+  padding: 2px;
+  margin: 2px;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  margin: 20px;
+}
+
+.terminal p {
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 2px;
+}
+
+.commandInput {
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.commandInput:hover, .nameBoxInput:hover{
+  background-color: gray;
+}
+
+.directoryList {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+/* CSS for darkmode slider */
+.theme-switch-container {
+  right: 10px;
+  position: absolute;
+}
+
+/* Hints Box */
+.hints {
+  margin-top: 10px;
+  border: solid gold 2px;
+  position: relative;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  margin: 20px;
+}
+
+.hints li {
+  list-style-type: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
