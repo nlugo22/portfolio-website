@@ -33,7 +33,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.95);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -98,8 +98,9 @@
 
 /* CSS for darkmode slider */
 .theme-switch-container {
-  right: 10px;
-  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 /* Hints Box */
@@ -122,8 +123,9 @@
   right: 5px;
   border: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 50%;
+  width: 25px;
 }
 
 .hidden {
